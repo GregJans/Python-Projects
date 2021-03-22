@@ -1,7 +1,3 @@
-from os import chdir
-
-chdir('C:/Users/gtj08/Desktop/Programing/Programs/Python')
-
 
 with open('average.txt', 'r+') as file:
     temps = list(file.readlines())
