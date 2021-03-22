@@ -15,10 +15,6 @@ while True:
 
         if (len(dividends) == 2):
             print(f"{num} is prime")
-            '''
-            with open("prime.txt", "w+") as file:
-                lines = list(file.readlines())
-                lines.append(f"{num} is prime")
-                '''
+            
 
     dividends.clear()
