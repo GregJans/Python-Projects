@@ -1,7 +1,11 @@
 import pytube
 
-p = pytube.Playlist("https://www.youtube.com/playlist?list=PLqGhVyOFc2J3Lt23F5b8RctjHYDwxx_QN")
+url = "insert playlist url here"
+dl_location = "insert directory here where to download the files"
+
+p = pytube.Playlist(url)
 
 for video in p.videos:
     print(f"Downloading {video.title}")
-    video.streams.filter(only_audio=True, mime_type="audio/mp4").first().download("C:/Users/gtj08/OneDrive/Documents/Music/Star Wars Ep3")
+    # change filter perameters acordingly
+    video.streams.filter(only_audio=True, mime_type="audio/mp4").first().download(dl_location)
